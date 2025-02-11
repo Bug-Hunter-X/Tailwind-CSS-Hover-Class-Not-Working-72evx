@@ -1,0 +1,7 @@
+The issue was resolved by ensuring that the parent element of the button did not have any conflicting styles that were overriding the hover styles.  Adding `!important` is generally not recommended for maintainability but demonstrates a solution when conflicting styles are difficult to identify and resolve using the CSS specificity model. 
+
+```html
+<div>
+  <button class="bg-blue-500 hover:bg-blue-700 !important">Click Me</button>
+</div>
+```
